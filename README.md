@@ -16,6 +16,20 @@
 3. 初始页另外一个下拉选单也有两个选项，分别是Top250电影分析和世界电影评分分析，选择选项之后不需要点其他按键即可跳转，我和我的搭档将七张可视化图表分别整合了两个页面对应两个选项动作生成后跳转的URL，我整合了Top250电影分析的可视化图表的HTML文档，增加了全局的JavaScript粒子线条动画效果和返回上一页键实现页面内部跳转功能。
 
 
+
+4.所含的URL：
+、、、
+http://chenzhouchi.pythonanywhere.com/
+
+http://chenzhouchi.pythonanywhere.com/table_concluding
+
+https://lephyant.gitee.io/experiment_sample/
+
+https://lephyant.gitee.io/experiment_sample2/
+、、、
+
+
+
 ---
 
 
