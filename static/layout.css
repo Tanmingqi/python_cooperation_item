@@ -1,0 +1,75 @@
+.left {
+	width: 300px;
+    height: 500px;
+    float: left;
+    background-color: coral;
+}
+
+.right {
+	float: right;
+	width: 500px;
+	height: auto;
+	margin-left: 200px;
+    background-color: greenyellow;
+}
+
+.production{
+	text-align: center;
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+	padding: 30px;
+	border: 5px;
+	border-style: solid;
+
+}
+
+.score{
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+	padding: 30px;
+	border-style: solid;
+}
+
+.Proportion{
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+	padding: 30px;
+	border-style: solid;
+
+
+}
+
+.top-250_country{
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+	padding: 30px;
+
+}
+
+.top-250_place{
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+	padding: 30px;
+
+}
+
+.director{
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+	padding: 30px;
+
+}
+
+.actor{
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+	padding: 30px;
+
+}
