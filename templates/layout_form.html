@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<head>
+    <title>豆瓣数据分析</title>
+    <link rel="stylesheet" href="../static/layout.css" type="text/css">
+</head>
+<div>
+<!--左边大框-->
+<div class="left">
+	<!--标题-->
+	<h1>世界电影评分分析</h1>
+
+    <form method="post" action="/production">
+	<button class="production">不同国家电影产量统计</button>
+    </form>
+    <form method="post" action="/score">
+	<button class="score">电影评分统计</button>
+    </form>
+    <form method="post" action="/Proportion">
+	<button class="Proportion">豆瓣电影评分比例</button>
+    </form>
+
+
+</div>
+<!--右边大框-->
+<div class="right">
+	<!--标题-->
+	<h1>Top250电影分析</h1>
+	<div class="top-250_country" style="border: 5px; border-style: solid;">Top250电影产源国家比例</div>
+	<div class="top-250_place" style="border: 5px; border-style: solid;">Top250电影分部地区</div>
+	<div class="director" style="border: 5px; border-style: solid;">Top10导演</div>
+	<div class="actor" style="border: 5px; border-style: solid;">演员</div>
+</div>
+</div>
+
+{% endblock %}

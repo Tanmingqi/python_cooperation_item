@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>标题</title>
+
+    <script>
+window.onload=initForm;
+function initForm(){
+  var osel=document.getElementById("sel");
+  osel.selectedIndex=0;
+  osel.onchange=jumpPage;
+}
+function jumpPage(){
+  var osel=document.getElementById("sel");
+  var newURL=osel.options [osel.selectedIndex].value;
+  if(newURL!=""){
+    window.location.href=newURL;
+  }
+}
+</script>
+
+</head>
+<body>
+<div>
+<form id="1" method="POST" action="/table_concluding">
+
+     <select name="the_region_selected">
+      {% for item in the_select_region %}
+            <option value="{{ item }}">{{ item }}</option>
+       {% endfor %}
+    </select>
+
+
+
+
+<p><input value='Do it!' type='SUBMIT'></p>
+</form>
+
+
+<select id="sel">
+  <option selected>-选择跳转方向 选完即跳-</option>
+  <option value="https://lephyant.gitee.io/experiment_sample">Top250电影分析</option>
+  <option value="https://lephyant.gitee.io/experiment_sample2 ">世界电影评分分析</option>
+</select>
+
+ <p><input type='SUBMIT' onclick='javascript:history.back(-1);' value='返回上一页'></p>
+
+</div>
+{#{{ the_plot_all|safe }} 放可视化地图#}
+{{ the_res|safe }} {#放数据#}
+
+
+</body>
+</html>
